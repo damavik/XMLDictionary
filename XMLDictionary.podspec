@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/nicklockwood/XMLDictionary.git", :tag => "1.4" }
   s.source_files = 'XMLDictionary'
   s.requires_arc = true
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load -force_load' }
   s.ios.deployment_target = '4.3'
   s.osx.deployment_target = '10.6'
   s.watchos.deployment_target = '2.0'
